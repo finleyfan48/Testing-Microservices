@@ -31,8 +31,6 @@ services:
     container_name: user-service
     ports:
       - "3003:3003"
-    env_file:
-      - ./user-service/.env
     networks:
       - app-net
 
