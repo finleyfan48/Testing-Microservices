@@ -8,12 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dev dependencies (not just production)
-RUN npm ci
+RUN npm install
 
 # Copy everything else
 COPY . .
-
-RUN npm run build
 
 # Expose the dev server port
 EXPOSE 3000
