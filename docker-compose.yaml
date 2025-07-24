@@ -22,7 +22,6 @@ services:
       - app-net
     depends_on:
       - backend
-      - user-service
 
 networks:
   app-net:
