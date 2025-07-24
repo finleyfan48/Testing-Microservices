@@ -22,6 +22,18 @@ services:
       - app-net
     depends_on:
       - backend
+      - user-service
+  user:
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    container_name: user
+    ports:
+      - "3003:3003"
+    networks:
+      - app-net
+    env_file:
+      - ./user-service/.env
 
 networks:
   app-net:

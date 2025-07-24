@@ -1,0 +1,17 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "Handles user registration, login, and profile access",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Dionte",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1"
+  }
+}
