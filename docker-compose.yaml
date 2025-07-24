@@ -24,16 +24,6 @@ services:
       - backend
       - user-service
 
-  user-service:
-    build:
-      context: ./user-service
-      dockerfile: Dockerfile
-    container_name: user-service
-    ports:
-      - "3003:3003"
-    networks:
-      - app-net
-
 networks:
   app-net:
     driver: bridge
